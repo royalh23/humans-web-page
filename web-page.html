@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My first web page</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap"
+        rel="stylesheet" type="text/css">
+        
+        <style>
+            :root {
+                --footer-color: rgb(255, 255, 153);
+            }
+
+            @media (max-width: 1000px) {
+                :root {
+                    --footer-color: rgb(255, 102, 0);
+                }
+            }
+
+            body {
+                background-color: wheat;
+            }
+
+            h1 {
+                color: darkgray;
+                font-family: Cairo, sans-serif;
+                text-align: center;
+                padding: 20px;
+                text-transform: uppercase;
+                background: linear-gradient(90deg, rgba(173, 216, 230, 0.9), #ccffff, rgba(173, 216, 230, 0.9));
+            }
+
+            h2 {
+                color: dimgrey;
+            }
+
+            ul {
+                line-height: 30px;
+            }
+
+            ol {
+                line-height: 30px;
+            }
+
+            footer {
+                font-size: small;
+                font-family: monospace;
+                text-align: center;
+                background-color: orange;
+                background-color: var(--footer-color, orange);
+            }
+
+            .dark-slate-grey-text {
+                color: darkslategrey;
+            }
+
+            .medium-image {
+                width: 600px;
+            }
+
+            .thick-black-border {
+                border: 40px ridge black;
+                border-radius: 15px;
+            }
+
+            .silver-background {
+                background-color: silver;
+            }
+
+            .thick-text {
+                font-size: large;
+                font-weight: 600;
+            }
+
+            #thinking-human {
+                position: relative;
+                left: 330px;
+                width: 800px !important;
+                height: 600px !important;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                box-shadow: 10px 10px 20px 20px rgba(0,0,0,0.35);
+            }
+
+            #submit {
+                color: white;
+                background-color: #4791d0;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            [type="checkbox"] {
+                margin-left: 170px;
+            }
+
+            [type="radio"] {
+                margin-left: 80px;
+            }
+
+            a:hover {
+                color: brown;
+            }
+
+            #submit:hover {
+                animation-name: background-color;
+                animation-duration: 200ms;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes background-color {
+               100% {
+                    transform: scale(1.15);
+                    background-color: #0F5897;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1 id="humans">Humans</h1>
+            </header>
+
+            <a href="#footer">(Jump to bottom)</a><br>
+            
+            <a href="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2020/01/thinking-human-statue.jpg?resize=1024%2C683&ssl=1"
+            target="_blank">
+                <img id="thinking-human" src="https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2020/01/thinking-human-statue.jpg?resize=1024%2C683&ssl=1"
+            alt="Thinking human" class="medium-image thick-black-border"></a>
+            
+            <div class="silver-background">
+                <p class="thick-text">Here is what we'll cover in this article:</p>
+                <nav>
+                    <ol>
+                        <li><a href="#who-are-humans">Who are humans?</a></li>
+                        <li><a href="#why-we-exist">Why do we exist?</a></li>
+                        <li><a href="#human-races">Human races</a></li>
+                        <li><a href="#what-humanity-needs">What does humanity need?</a></li>
+                        <li><a href="#b-human-chars">Basic human characteristics</a></li>
+                        <li><a href="#question">A question</a></li>
+                        <li><a href="#supporting-us">Would you mind supporting us?</a></li>
+                        <li><a href="#thanks-for-reading">Thanks for reading our article!</a></li>
+                    </ol>
+                </nav>
+                <hr>
+                <article>
+                    <section>
+                        <h2 id="who-are-humans">Who are humans?</h2>
+                        <p>Humans are bipedal organisms. Yes, we're bunch of intelligent organisms roaming
+                            the world on two feet.</p>
+                    </section>
+                    
+                    <section>
+                        <h2 id="why-we-exist">Why do we exist?</h2>
+                        <p>That's a <s>good</s> great question. To put it simply, we don't know. 
+                            We're still looking for answers though. <strong>Stay tuned. :)</strong></p>
+                    </section>
+
+                    <section>
+                        <h2 id="human-races">Human races</h2>
+                        <p>I don't know whether the list below is correct; so take it
+                            with a grain of salt:</p>
+                        <ul>
+                            <em>
+                            <li>Caucasoid</li>
+                            <li>Mongoloid</li>
+                            <li>Negroid</li>
+                            </em>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 id="what-humanity-needs">What does humanity need?</h2>
+                        <p>Humanity needs all of the things below in order:</p>
+                        <ol>
+                            <em>
+                            <li>Empathy;</li>
+                            <li>Compassion;</li>
+                            <li>Love;</li>
+                            <li>Mutual understanding.</li>
+                            </em>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h2 id="b-human-chars">Basic human characteristics</h2>
+                        <p>Here are the basic human characteristics according to
+                            me below. You can uncheck any of them if you do not agree with 
+                            me.</p>
+                        <form action="freecodecamp.org">
+                            <label for="kindess">
+                                <input id="kindess" type="checkbox" name="characteristics" value="kindess" checked> Kindness
+                            </label>
+                            <label for="intelligence">
+                                <input id="intelligence" type="checkbox" name="characteristics" value="intelligence" checked> Intelligence
+                            </label>
+                            <label for="dominancy">
+                                <input id="dominancy" type="checkbox" name="characteristics" value="dominancy" checked> Dominancy
+                            </label>
+                        </form>
+                    </section>
+
+                    <section>
+                        <h2 id="question">A question</h2>
+                        <p>Do you think humans will exist forever?</p>
+                        <form action="freecodecamp.org">
+                            <label for="yes">
+                                <input id="yes" type="radio" name="yes-or-no" value="yes"> Yes
+                            </label>
+                            <label for="no">
+                                <input id="no" type="radio" name="yes-or-no" value="no"> No
+                            </label>
+                    </section>
+
+                    <section>
+                        <h2 id="supporting-us">Would you mind supporting us?</h2>
+                        <p>You can send your donations to us via <a style="opacity: 0.8;" href="https://donorbox.org/" target="_blank">this website</a>.</p>
+                        </form>
+                    </section>
+
+                    <section>
+                        <h2 id="thanks-for-reading">Thanks for reading our article!</h2>
+                        <p>You can share your thoughts with us in the comment section 
+                            below. Have fun! :)</p>
+                    </section>
+                </article>
+            </div>
+            
+            <form action="freecodecamp.org">
+                Your comment:<br><input type="text" placeholder="Type your thoughts here." required>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
+        <br><footer id="footer" class="dark-slate-grey-text"><u>Copyright: Royal Huseyn 2020</u></footer>
+    </body>
+</html>
